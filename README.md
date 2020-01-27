@@ -12,7 +12,7 @@ Licence: [![LICENSE](https://img.shields.io/github/license/BenThomasSutton/semco
 Release: [![Releases](https://img.shields.io/github/release/BenThomasSutton/semcoursework/all.svg?style=flat-square)](https://github.com/BenThomasSutton/semcoursework/releases)
 
 **Team Members**
-1) Ben (_Project Manager_)
+1) Ben (_Project Owner_)
 2) Orestis (_Scrum Master_)
 3) Raymond
 4) Alastair
