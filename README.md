@@ -3,13 +3,13 @@
 ## SQL Project
 
 ### Software Engineering Methods
-Master Build Status: [![Build Status](https://travis-ci.com/BenThomasSutton/semcoursework.svg?branch=master)](https://travis-ci.com/BenThomasSutton/semcoursework)
+Master Build Status: [![Build Status](https://travis-ci.com/Raymond-ui/semcoursework.svg?branch=master)](https://travis-ci.com/Raymond-ui/semcoursework)
 
-Development Build Status: [![Build Status](https://travis-ci.com/BenThomasSutton/semcoursework.svg?branch=develop)](https://travis-ci.com/BenThomasSutton/semcoursework)
+Development Build Status: [![Build Status](https://travis-ci.com/Raymond-ui/semcoursework.svg?branch=develop)](https://travis-ci.com/Raymond-ui/semcoursework)
 
-Licence: [![LICENSE](https://img.shields.io/github/license/BenThomasSutton/semcoursework.svg?style=flat-square)](https://github.com/BenThomasSutton/semcoursework/blob/master/LICENSE)
+Licence: [![LICENSE](https://img.shields.io/github/license/Raymond-ui/semcoursework.svg?style=flat-square)](https://github.com/Raymond-ui/semcoursework/blob/master/LICENSE)
 
-Release: [![Releases](https://img.shields.io/github/release/BenThomasSutton/semcoursework/all.svg?style=flat-square)](https://github.com/BenThomasSutton/semcoursework/releases)
+Release: [![Releases](https://img.shields.io/github/release/Raymond-ui/semcoursework/all.svg?style=flat-square)](https://github.com/Raymond-ui/semcoursework/releases)
 
 **Team Members**
 1) Ben (_Product Owner_)
