@@ -1,0 +1,19 @@
+@startuml
+
+actor HR as "HR Advisor"
+
+rectangle Database
+
+rectangle "HR System" {
+    usecase UC4 as "Get the Cites, including their
+    Name, Country, District
+    and population."
+
+    usecase UCa as "Produce report"
+
+    HR - UC4
+    UC4 ..> UCa : include
+    UC4 - Database
+}
+
+@enduml
