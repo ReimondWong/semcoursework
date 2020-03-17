@@ -183,6 +183,7 @@ public class App
         a.connect();
 
         //Get all Countries Population Descending
+        System.out.println("Getting All Countries");
         ArrayList<Country> countries = a.getAllCountries();
 
         //display all countries and population desc
