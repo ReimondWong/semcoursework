@@ -1,6 +1,7 @@
 package com.napier.sem;
 
 import java.sql.*;
+import java.util.ArrayList;
 
 public class App
 {
@@ -70,6 +71,54 @@ public class App
         }
     }
 
+    public ArrayList<Country> getAllCountries()
+    {
+        ArrayList<Country> countryList = new ArrayList<>();
+
+        try
+        {
+            // Create an SQL statement
+            Statement stmt = con.createStatement();
+            // Create string for SQL statement
+            String strSelect =
+                    "SELECT Name "
+                            + "FROM country "
+                            + "Order By Population DESC";
+            // Execute SQL statement
+            ResultSet rset = stmt.executeQuery(strSelect);
+
+            while (rset.next())
+            {
+                Country country = new Country();
+                country.name = rset.getString("Name");
+                country.population = rset.getInt("Population");
+                countryList.add(country);
+            }
+
+        }
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+            System.out.println("Failed to get country details");
+            return null;
+        }
+
+        return countryList;
+    }
+
+    public void displayAllCountries(ArrayList<Country> p_countries)
+    {
+        if (getAllCountries() != null)
+        {
+            for (Country c: p_countries)
+            {
+                System.out.println(
+                        c.name + " "
+                                + c.population + " ");
+            }
+
+        }
+    }
     /*
     public Employee getEmployee(int ID)
     {
@@ -105,6 +154,7 @@ public class App
         }
     }
 
+
     public void displayEmployee(Employee emp)
     {
         if (emp != null)
@@ -122,6 +172,8 @@ public class App
 
      */
 
+
+
     public static void main(String[] args)
     {
         // Create new Application
@@ -130,13 +182,14 @@ public class App
         // Connect to database
         a.connect();
 
-        // Get Employee
-        //Employee emp = a.getEmployee(255530);
+        //Get all Countries Population Descending
+        ArrayList<Country> countries = a.getAllCountries();
 
-        // Display results
-        //a.displayEmployee(emp);
+        //display all countries and population desc
+        a.displayAllCountries(countries);
 
-        // Disconnect from database
-        //a.disconnect();
+        //Disconnect from database
+        System.out.println("Disconnecting from Database");
+        a.disconnect();
     }
 }
