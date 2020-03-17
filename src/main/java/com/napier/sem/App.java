@@ -34,7 +34,8 @@ public class App
                 // Wait a bit for db to start
                 Thread.sleep(30000);
                 // Connect to database
-                con = DriverManager.getConnection("jdbc:mysql://db:3306/employees?useSSL=false", "root", "example");
+                // con = DriverManager.getConnection("jdbc:mysql://db:3306/employees?useSSL=false", "root", "example");
+                con = DriverManager.getConnection("jdbc:mysql://db:3306/world?useSSL=false", "root", "example");
                 System.out.println("Successfully connected");
                 break;
             }
@@ -69,6 +70,7 @@ public class App
         }
     }
 
+    /*
     public Employee getEmployee(int ID)
     {
         try
@@ -118,6 +120,8 @@ public class App
         }
     }
 
+     */
+
     public static void main(String[] args)
     {
         // Create new Application
@@ -127,12 +131,12 @@ public class App
         a.connect();
 
         // Get Employee
-        Employee emp = a.getEmployee(255530);
+        //Employee emp = a.getEmployee(255530);
 
         // Display results
-        a.displayEmployee(emp);
+        //a.displayEmployee(emp);
 
         // Disconnect from database
-        a.disconnect();
+        //a.disconnect();
     }
 }
